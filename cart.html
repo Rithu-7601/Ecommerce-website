@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahsion Shopping!</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+    <!-- icon -->
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <div class="container-fluid px-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <!-- navbar brand -->
+            <a href="/" class="navbar-brand text-success">
+              <i
+                class="
+                  fab
+                  fa-shopify fa-2x
+                  text-success
+                  pe-2
+                  d-inline-block
+                  align-center
+                "
+              ></i
+              ><em>Fashion</em>
+            </a>
+            <!-- end of navbar brand -->
+
+            <!-- toggler button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNavBar"
+              aria-controls="myNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end of toggler button -->
+            <div class="collapse navbar-collapse" id="myNavBar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/product.html" class="nav-link">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/productView.html" class="nav-link">ProductView</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/category.html" class="nav-link">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/aboutus.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contactus.html" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/checkout.html" class="nav-link">CheckOut</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/Order.html" class="nav-link">Orders</a>
+                </li>
+              </ul>
+              <div class="search-btn pe-3">
+                <a href="/search.html" class="btn btn-sm btn-outline-primary">
+                  Search
+                </a>
+              </div>
+              <div class="cart-icon">
+                <a href="/cart.html">
+                  <i class="fas fa-shopping-cart text-success"></i>
+                  <span class="badge rounded-pill bg-success">24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header -->
+
+    <section>
+      <div class="container mb-3">
+        <div class="row">
+          <div class="col-md-10 col-11 mx-auto">
+            <div class="row mt-5 gx-3">
+              <!-- left side div -->
+              <div
+                class="
+                  col-md-12 col-lg-8 col-11
+                  mx-auto
+                  main_cart
+                  mb-lg-0 mb-5
+                  shadow
+                "
+              >
+                <div class="card p-4 mt-3">
+                  <h3 class="py-4 font-weight-bold">Cart (2 items)</h3>
+                  <div class="row">
+                    <!-- cart images div -->
+                    <div
+                      class="
+                        col-md-5 col-11
+                        mx-auto
+                        bg-light
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        shadow
+                        product_img
+                      "
+                    >
+                      <img
+                        src="images/a.jpg"
+                        class="img-fluid"
+                        alt="cart img"
+                      />
+                    </div>
+
+                    <!-- cart product details -->
+                    <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                      <div class="row">
+                        <!-- product name  -->
+                        <div class="col-6 card-title">
+                          <h4 class="mb-4 product_name">Green Shirt</h4>
+                          <p class="mb-2 text-muted">SHIRT - GREEN</p>
+                          <p class="mb-2 text-muted">COLOR: GREEN</p>
+                          <p class="mb-3 text-muted">SIZE: M</p>
+                        </div>
+                        <!-- quantity inc dec -->
+                        <div>
+                          <ul
+                            class="pagination justify-content-end set_quantity"
+                          >
+                            <li class="page-item">
+                              <button
+                                class="page-link"
+                                onclick="decreaseNumber('textbox','itemval')"
+                              >
+                                <i class="fas fa-minus"></i>
+                              </button>
+                            </li>
+                            <li class="page-item">
+                              <input
+                                type="text"
+                                name=""
+                                class="page-link"
+                                value="0"
+                                id="textbox"
+                              />
+                            </li>
+                            <li class="page-item">
+                              <button
+                                class="page-link"
+                                onclick="increaseNumber('textbox','itemval')"
+                              >
+                                <i class="fas fa-plus"></i>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- //remover move and price -->
+                      <div class="row">
+                        <div
+                          class="
+                            col-8
+                            d-flex
+                            justify-content-between
+                            remove_wish
+                          "
+                        >
+                          <p>
+                            <i class="fas fa-trash-alt text-primary"></i> REMOVE
+                            ITEM
+                          </p>
+                        </div>
+                        <div
+                          class="col-4 d-flex justify-content-end price_money"
+                        >
+                          <h4>$<span id="itemval">0.00 </span></h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <hr />
+                <!-- 2nd cart product -->
+                <div class="card p-4 mb-3">
+                  <div class="row">
+                    <!-- cart images div -->
+                    <div
+                      class="
+                        col-md-5 col-11
+                        mx-auto
+                        bg-light
+                        d-flex
+                        justify-content-center
+                        align-items-center
+                        shadow
+                        product_img
+                      "
+                    >
+                      <img
+                        src="images/c.jpg"
+                        class="img-fluid"
+                        alt="cart img"
+                      />
+                    </div>
+
+                    <!-- cart product details -->
+                    <div class="col-md-7 col-11 mx-auto px-4 mt-2">
+                      <div class="row">
+                        <!-- product name  -->
+                        <div class="col-6 card-title">
+                          <h4 class="mb-4 product_name">Lehanga</h4>
+                          <p class="mb-2 text-muted">SHIRT - PINK</p>
+                          <p class="mb-2 text-muted">COLOR: PINK</p>
+                          <p class="mb-3 text-muted">SIZE: M</p>
+                        </div>
+                        <!-- quantity inc dec -->
+                        <div>
+                          <ul
+                            class="pagination justify-content-end set_quantity"
+                          >
+                            <li class="page-item">
+                              <button
+                                class="page-link"
+                                onclick="decreaseNumber('textbox1','itemval1')"
+                              >
+                                <i class="fas fa-minus"></i>
+                              </button>
+                            </li>
+                            <li class="page-item">
+                              <input
+                                type="text"
+                                name=""
+                                class="page-link"
+                                value="0"
+                                id="textbox1"
+                              />
+                            </li>
+                            <li class="page-item">
+                              <button
+                                class="page-link"
+                                onclick="increaseNumber('textbox1','itemval1')"
+                              >
+                                <i class="fas fa-plus"></i>
+                              </button>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <!-- //remover move and price -->
+                      <div class="row">
+                        <div
+                          class="
+                            col-8
+                            d-flex
+                            justify-content-between
+                            remove_wish
+                          "
+                        >
+                          <p>
+                            <i class="fas fa-trash-alt text-primary"></i> REMOVE
+                            ITEM
+                          </p>
+                        </div>
+                        <div
+                          class="col-4 d-flex justify-content-end price_money"
+                        >
+                          <h4>$<span id="itemval1">0.00 </span></h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- right side div -->
+              <div class="col-md-12 col-lg-4 col-11 mx-auto mt-lg-0 mt-md-5">
+                <div class="right_side p-3 shadow bg-white">
+                  <h4 class="product_name mb-5">Order Summary</h4>
+                  <div class="price_indiv d-flex justify-content-between">
+                    <p>Product amount</p>
+                    <p>$<span id="product_total_amt">0.00</span></p>
+                  </div>
+                  <div class="price_indiv d-flex justify-content-between">
+                    <p>Shipping Charge</p>
+                    <p>$<span id="shipping_charge">50.0</span></p>
+                  </div>
+                  <hr />
+                  <div
+                    class="
+                      total-amt
+                      d-flex
+                      justify-content-between
+                      font-weight-bold
+                    "
+                  >
+                    <p>The total amount of (including VAT)</p>
+                    <p>$<span id="total_cart_amt">75.00</span></p>
+                  </div>
+
+                  <button class="btn btn-primary text-uppercase">
+                    Checkout
+                  </button>
+                </div>
+
+                <div class="mt-3 shadow p-3 bg-white">
+                  <div>
+                    <h5 class="mb-4">Expected delivery date</h5>
+                    <p>July 27th 2020 - July 29th 2020</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row p-5">
+          <div class="col-md-3 text-white">
+            <i class="fab fa-shopify fa-2x text-success pe-2"></i
+            ><em>Fashion</em>
+            <p>
+              Shopify is one such online shopping website that joins the list of
+              platforms that help curate a personalised fashion feed. Named
+              theShopify Studio, this personalised search feed brings you the
+              latest men and women’s fashion trends, celebrity styles, branded
+              content and daily updates from your favourite fashion labels.
+            </p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">quick links</h4>
+            <a href="/aboutus.html" class="text-decoration-none text-white">
+              <p>About us</p></a
+            >
+            <p>Offers & Discounts</p>
+            <p>Get coupons</p>
+            <a href="/contactus.html" class="text-decoration-none text-white">
+              <p>Contact us</p>
+            </a>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">new products</h4>
+            <p>Women cloth</p>
+            <p>Fashion accessories</p>
+            <p>Men cloth</p>
+            <p>Cosmetics products</p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">support</h4>
+            <p>FAQ</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Report a payment issue</p>
+          </div>
+          <hr class="text-white" />
+          <p class="text-center text-white p-2">
+            Copyright 2021 All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./assets/bootstrap-5.0.1-dist/js/script.js"></script>
+    <!-- Optional JavaScript -->
+
+    <script type="text/javascript">
+      var product_total_amt = document.getElementById("product_total_amt");
+      var shipping_charge = document.getElementById("shipping_charge");
+      var total_cart_amt = document.getElementById("total_cart_amt");
+
+      const decreaseNumber = (incdec, itemprice) => {
+        var itemval = document.getElementById(incdec);
+        var itemprice = document.getElementById(itemprice);
+        console.log(itemprice.innerHTML);
+        // console.log(itemval.value);
+        if (itemval.value <= 0) {
+          itemval.value = 0;
+          alert("Negative quantity not allowed");
+        } else {
+          itemval.value = parseInt(itemval.value) - 1;
+          itemval.style.background = "#fff";
+          itemval.style.color = "#000";
+          itemprice.innerHTML = parseInt(itemprice.innerHTML) - 15;
+          product_total_amt.innerHTML =
+            parseInt(product_total_amt.innerHTML) - 15;
+          total_cart_amt.innerHTML =
+            parseInt(product_total_amt.innerHTML) +
+            parseInt(shipping_charge.innerHTML);
+        }
+      };
+      const increaseNumber = (incdec, itemprice) => {
+        var itemval = document.getElementById(incdec);
+        var itemprice = document.getElementById(itemprice);
+        // console.log(itemval.value);
+        if (itemval.value >= 5) {
+          itemval.value = 5;
+          alert("max 5 allowed");
+          itemval.style.background = "red";
+          itemval.style.color = "#fff";
+        } else {
+          itemval.value = parseInt(itemval.value) + 1;
+          itemprice.innerHTML = parseInt(itemprice.innerHTML) + 15;
+          product_total_amt.innerHTML =
+            parseInt(product_total_amt.innerHTML) + 15;
+          total_cart_amt.innerHTML =
+            parseInt(product_total_amt.innerHTML) +
+            parseInt(shipping_charge.innerHTML);
+        }
+      };
+    </script>
+    <!-- ==============cart ends here============== -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

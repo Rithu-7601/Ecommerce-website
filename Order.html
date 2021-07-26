@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahsion Shopping!</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+    <!-- icon -->
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <div class="container-fluid px-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <!-- navbar brand -->
+            <a href="/" class="navbar-brand text-success">
+              <i
+                class="
+                  fab
+                  fa-shopify fa-2x
+                  text-success
+                  pe-2
+                  d-inline-block
+                  align-center
+                "
+              ></i
+              ><em>Fashion</em>
+            </a>
+            <!-- end of navbar brand -->
+
+            <!-- toggler button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNavBar"
+              aria-controls="myNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end of toggler button -->
+            <div class="collapse navbar-collapse" id="myNavBar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/product.html" class="nav-link">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/productView.html" class="nav-link">ProductView</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/category.html" class="nav-link">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/aboutus.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contactus.html" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/checkout.html" class="nav-link">CheckOut</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/Order.html" class="nav-link active">Orders</a>
+                </li>
+              </ul>
+              <div class="search-btn pe-3">
+                <a href="/search.html" class="btn btn-sm btn-outline-primary">
+                  Search
+                </a>
+              </div>
+              <div class="cart-icon">
+                <a href="/cart.html">
+                  <i class="fas fa-shopping-cart text-success"></i>
+                  <span class="badge rounded-pill bg-success">24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header -->
+    <!-- ======orders starts here===== -->
+    <section class="order_confirmation py-5 my-5" id="order_confirmation">
+      <div class="container">
+        <div class="section_title text-center mb-5">
+          <h2 class="text-capitalize">order confirmation</h2>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mx-auto text-center">
+            <div>
+              <img src="images/order.png" class="img img-fluid" alt="image" />
+            </div>
+            <div>
+              <h2>Thankyou for your purchase!</h2>
+              <h6>
+                A confirmation email has been sent to <b>xyz@gmail.com</b>
+              </h6>
+              <h6>
+                <span class="mr-2">Order No:</span
+                ><span><b>123123123123</b></span>
+              </h6>
+              <h6>
+                <span class="mr-2">Order Status:</span>
+                <span>
+                  <b>
+                    <span class="badge bg-danger">Pending</span>
+                  </b>
+                </span>
+              </h6>
+              <a href="index.html" class="btn btn-primary btn-lg mt-5"
+                >Return to Home</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- =====order ends here======-->
+
+    <footer class="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row p-5">
+          <div class="col-md-3 text-white">
+            <i class="fab fa-shopify fa-2x text-success pe-2"></i
+            ><em>Fashion</em>
+            <p>
+              Shopify is one such online shopping website that joins the list of
+              platforms that help curate a personalised fashion feed. Named
+              theShopify Studio, this personalised search feed brings you the
+              latest men and women’s fashion trends, celebrity styles, branded
+              content and daily updates from your favourite fashion labels.
+            </p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">quick links</h4>
+            <a href="/aboutus.html" class="text-decoration-none text-white">
+              <p>About us</p></a
+            >
+            <p>Offers & Discounts</p>
+            <p>Get coupons</p>
+            <a href="/contactus.html" class="text-decoration-none text-white">
+              <p>Contact us</p>
+            </a>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">new products</h4>
+            <p>Women cloth</p>
+            <p>Fashion accessories</p>
+            <p>Men cloth</p>
+            <p>Cosmetics products</p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">support</h4>
+            <p>FAQ</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Report a payment issue</p>
+          </div>
+          <hr class="text-white" />
+          <p class="text-center text-white p-2">
+            Copyright 2021 All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./assets/bootstrap-5.0.1-dist/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fahsion Shopping!</title>
+
+    <!-- bootstrap css -->
+    <link
+      rel="stylesheet"
+      href="./assets/bootstrap-5.0.1-dist/css/bootstrap.min.css"
+    />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- fonts style -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- external css -->
+    <link rel="stylesheet" href="./assets/bootstrap-5.0.1-dist/css/style.css" />
+    <!-- icon -->
+    <link rel="icon" href="favicon.png" />
+  </head>
+  <body>
+    <!-- header -->
+
+    <header>
+      <div class="container-fluid px-0">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container">
+            <!-- navbar brand -->
+            <a href="/" class="navbar-brand text-success">
+              <i
+                class="
+                  fab
+                  fa-shopify fa-2x
+                  text-success
+                  pe-2
+                  d-inline-block
+                  align-center
+                "
+              ></i
+              ><em>Fashion</em>
+            </a>
+            <!-- end of navbar brand -->
+
+            <!-- toggler button -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#myNavBar"
+              aria-controls="myNavBar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- end of toggler button -->
+            <div class="collapse navbar-collapse" id="myNavBar">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a href="/index.html" class="nav-link"> Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/product.html" class="nav-link">Product</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/productView.html" class="nav-link">ProductView</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/category.html" class="nav-link">Category</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/aboutus.html" class="nav-link">About us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contactus.html" class="nav-link">Contact us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/checkout.html" class="nav-link active">CheckOut</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/Order.html" class="nav-link">Orders</a>
+                </li>
+              </ul>
+              <div class="search-btn pe-3">
+                <a href="/search.html" class="btn btn-sm btn-outline-primary">
+                  Search
+                </a>
+              </div>
+              <div class="cart-icon">
+                <a href="/cart.html">
+                  <i class="fas fa-shopping-cart text-success"></i>
+                  <span class="badge rounded-pill bg-success">24</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- end of header -->>
+
+    <!-- ==== Checkout ==== -->
+    <section class="Checkout mt-3 mb-3" id="Checkout">
+      <div class="container">
+        <div class="section_title text-center mb-5">
+          <h4 class="text-center text-success">CheckOut</h4>
+        </div>
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-8">
+            <!-- Card -->
+            <div class="card pb-5">
+              <div class="card-body">
+                <h5 class="mb-5">Billing details</h5>
+                <!-- Grid row -->
+                <div class="row">
+                  <!-- Grid column -->
+                  <div class="col-lg-6">
+                    <!-- First name -->
+                    <div class="form-group mb-0 mb-lg-4">
+                      <label for="firstName">First name</label>
+                      <input
+                        type="text"
+                        id="firstName"
+                        class="form-control mb-0 mb-lg-2"
+                      />
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+                  <!-- Grid column -->
+                  <div class="col-lg-6">
+                    <!-- Last name -->
+                    <div class="form-group md-outline">
+                      <label for="lastName">Last name</label>
+                      <input
+                        type="text"
+                        id="lastName"
+                        class="form-control mb-3"
+                      />
+                    </div>
+                  </div>
+                  <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
+                <!-- Phone -->
+                <div class="form-group">
+                  <label for="form18">Phone</label>
+                  <input type="number" id="form18" class="form-control mb-3" />
+                </div>
+                <!-- Email address -->
+                <div class="form-group">
+                  <label for="form19">Email address</label>
+                  <input type="email" id="form19" class="form-control mb-3" />
+                </div>
+
+                <!-- Address Part 1 -->
+                <div class="form-group mb-3">
+                  <label for="form14">Address Line 1</label>
+                  <input
+                    type="text"
+                    id="form14"
+                    placeholder="House number and
+    street name"
+                    class="form-control mb-3"
+                  />
+                </div>
+                <!-- Address Part 2 -->
+                <div class="form-group">
+                  <label for="form15">Address Line 2</label>
+                  <input
+                    type="text"
+                    id="form15"
+                    placeholder="Apartment, suite, unit
+    etc. (optional)"
+                    class="form-control mb-3"
+                  />
+                </div>
+                <!-- Postcode / ZIP -->
+                <div class="form-group">
+                  <label for="form16">Postcode / ZIP</label>
+                  <input type="text" id="form16" class="form-control mb-3" />
+                </div>
+                <!-- Town / City -->
+                <div class="form-group">
+                  <label for="form17">Town / City</label>
+                  <input type="text" id="form17" class="form-control mb-3" />
+                </div>
+                <!-- Additional information -->
+                <div class="form-group">
+                  <label for="form76">Additional information</label>
+                  <textarea
+                    id="form76"
+                    class="md-textarea form-control mb-3"
+                    rows="4"
+                  ></textarea>
+                </div>
+                <!-- <button class="btn btn-success"><i class="fa fa-check"></i>
+    Purchase</button> -->
+                <div class="text-center">
+                  <a href="order_confirmation.html" class="btn btn-primary">
+                    <i class="fa fa-check mr-2"></i>Purchase
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!--Grid column-->
+          <!--Grid column-->
+          <div class="col-lg-4 bg_checkout_1 h-25 rounded">
+            <!-- Card -->
+            <div class="mb-3">
+              <div class="card p-2 pt-4">
+                <h5 class="mb-3">Order summary</h5>
+                <ul class="list-group list-group-flush">
+                  <li
+                    class="
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-0
+                      px-0
+                      pb-2
+                    "
+                  >
+                    <span>Product name 1</span>
+                    <span>x2</span>
+                    <span>₹25.98</span>
+                  </li>
+                  <li
+                    class="
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-0
+                      px-0
+                      pb-2
+                    "
+                  >
+                    <span>Product name 2</span>
+                    <span>x2</span>
+                    <span>₹25.98</span>
+                  </li>
+                  <li
+                    class="
+                      list-group-item
+                      d-flex
+                      justify-content-between
+                      align-items-center
+                      border-top
+                      px-0
+                      mb-3
+                    "
+                  >
+                    <div>
+                      <strong>Total amount</strong>
+                      <strong>
+                        <p class="mb-0">(including VAT)</p>
+                      </strong>
+                    </div>
+                    <span><strong>₹53.98</strong></span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <!-- Card -->
+          </div>
+          <!--Grid column-->
+        </div>
+      </div>
+    </section>
+    <!-- =====Checkout ends here===== -->
+    <!-- footer -->
+    <footer class="footer">
+      <div class="container-fluid bg-dark">
+        <div class="row p-5">
+          <div class="col-md-3 text-white">
+            <i class="fab fa-shopify fa-2x text-success pe-2"></i
+            ><em>Fashion</em>
+            <p>
+              Shopify is one such online shopping website that joins the list of
+              platforms that help curate a personalised fashion feed. Named
+              theShopify Studio, this personalised search feed brings you the
+              latest men and women’s fashion trends, celebrity styles, branded
+              content and daily updates from your favourite fashion labels.
+            </p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">quick links</h4>
+            <a href="/aboutus.html" class="text-decoration-none text-white">
+              <p>About us</p></a
+            >
+            <p>Offers & Discounts</p>
+            <p>Get coupons</p>
+            <a href="/contactus.html" class="text-decoration-none text-white">
+              <p>Contact us</p>
+            </a>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">new products</h4>
+            <p>Women cloth</p>
+            <p>Fashion accessories</p>
+            <p>Men cloth</p>
+            <p>Cosmetics products</p>
+          </div>
+          <div class="col-md-3 text-white">
+            <h4 class="text-capitalize">support</h4>
+            <p>FAQ</p>
+            <p>Terms & Conditions</p>
+            <p>Privacy Policy</p>
+            <p>Report a payment issue</p>
+          </div>
+          <hr class="text-white" />
+          <p class="text-center text-white p-2">
+            Copyright 2021 All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- Back to top button -->
+    <button
+      type="button"
+      class="btn btn-danger btn-floating btn-lg"
+      id="btn-back-to-top"
+    >
+      <i class="fas fa-arrow-up"></i>
+    </button>
+    <script src="./assets/bootstrap-5.0.1-dist/js/script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script src="assets/bootstrap-5.0.1-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
